@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Generador de Curp</title>
+  </head>
+  <body>
+    <section class="main__container">
+      <div class="template"></div>
+      <form class="generateCurp wrapper">
+        <div class="input-data">
+          <input required type="text" name="nombre" id="" />
+          <label>Nombre(s):</label>
+          <div class="underline"></div>
+        </div>
+        <br />
+
+        <div class="input-data">
+          <input required type="text" name="apellidoPaterno" id="" />
+          <label>Apellido paterno:</label>
+          <div class="underline"></div>
+        </div>
+        <br />
+
+        <div class="input-data">
+          <input required type="text" name="apellidoMaterno" id="" />
+          <label>Apellido materno:</label>
+          <div class="underline"></div>
+        </div>
+        <br /><br />
+
+        <div class="input-data">
+          <input
+            value="2000-01-01"
+            required
+            type="date"
+            name="fechaNacimiento"
+          />
+          <label>Fecha de nacimiento:</label>
+          <div class="underline"></div>
+        </div>
+        <br />
+
+        <div class="select">
+          <label>Genéro</label>
+          <select required name="gender" id="">
+            <option value="H">MASCULINO</option>
+            <option value="M">FEMENINO</option>
+          </select>
+        </div>
+        <br />
+
+        <div class="select">
+          <label>Lugar de nacimiento</label>
+          <select name="entidadFederativa">
+            <option value="AS">AGUASCALIENTES</option>
+            <option value="BC">BAJA CALIFORNIA</option>
+            <option value="BS">BAJA CALIFORNIA SUR</option>
+            <option value="CC">CAMPECHE</option>
+            <option value="CL">COAHUILA</option>
+            <option value="CH">CHIHUAHUA</option>
+            <option value="CS">CHIAPAS</option>
+            <option value="DF">DISTRITO FEDERAL</option>
+            <option value="DG">DURANGO</option>
+            <option value="GT">GUANAJUATO</option>
+            <option value="GR">GUERRERO</option>
+            <option value="HG">HIDALGO</option>
+            <option value="JC">JALISCO</option>
+            <option value="MC">MÉXICO</option>
+            <option value="MN">MICHOACÁN</option>
+            <option value="MS">MORELOS</option>
+            <option value="NT">NAYARIT</option>
+            <option value="NL">NUEVO LEÓN</option>
+            <option value="OC">OAXACA</option>
+            <option value="PL">PUEBLA</option>
+            <option value="QT">QUERÉTARO</option>
+            <option value="QR">QUINTANA ROO</option>
+            <option value="SP">SAN LUIS POTOSI</option>
+            <option value="SL">SINALOA</option>
+            <option value="SR">SONORA</option>
+            <option value="TC">TABASCO</option>
+            <option value="TS">TAMAULIPAS</option>
+            <option value="TL">TLAXCALA</option>
+            <option value="VZ">VERACRUZ</option>
+            <option value="YN">YUCATÁN</option>
+            <option value="ZS">ZACATECAS</option>
+            <option value="NE">NACIDO EN EL EXTRANJERO</option>
+          </select>
+        </div>
+        <br />
+
+        <button class="button">
+          <div class="content">
+            <i class="bx bx-cloud-download"></i>
+            <span class="button-text">Generar Curp</span>
+          </div>
+        </button>
+      </form>
+    </section>
+
+    <script type="module" src="./script/main.js"></script>
+  </body>
+</html>
